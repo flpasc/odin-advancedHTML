@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML5</title>
+	</head>
+	<body>
+		<div>
+			<form>
+				<fieldset>
+					<h2>Edit your preferences</h2>
+					<ul>
+						<li>
+							<label for="email">Email:</label>
+							<input type="email" name="user_mail" id="email" />
+						</li>
+						<li>
+							<label for="website">Website:</label>
+							<input type="url" name="web" , id="website" />
+						</li>
+						<li>
+							<label for="phone">Phone:</label>
+							<input type="tel" name="phone_number" id="phone" />
+						</li>
+						<li>
+							<label for="color">Favorite Color:</label>
+							<input type="color" name="fav_color" id="color" />
+						</li>
+						<li>
+							<button type="submit">Update preferences</button>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<ul>
+						<li>
+							<label for="max-invite">Select maximum number of invitations</label>
+							<input type="range" name="max_inv" id="max_invite" min="1" max="30" value="10" />
+							<output class="inv-output" for="max-invite"></output>
+						</li>
+					</ul>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>
