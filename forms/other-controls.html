@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Other Controls</title>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Leave a comment</legend>
+				<h3>Enter your comment</h3>
+				<ul>
+					<li>
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="username" />
+					</li>
+					<li>
+						<label for="comment">Comment:</label>
+						<textarea
+							name="user-comment"
+							id="comment"
+							cols="35"
+							rows="10"
+							maxlength="100"></textarea>
+					</li>
+					<li>
+						<button type="submit">Submit comment</button>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Your favorite food</legend>
+				<ul>
+					<li>
+						<select name="fav_food" id="food">
+							<optgroup label="mains">
+								<option value="salad">Salad</option>
+								<option value="curry">Curry</option>
+								<option selected value="pizza">Pizza</option>
+								<option value="fajitas">Fajitas</option>
+							</optgroup>
+							<optgroup label="snacks">
+								<option value="biscuits">Biscuits</option>
+								<option value="crisps">Crisps</option>
+								<option value="fruit">Fruit</option>
+								<option value="breadsticks">Breadsticks</option>
+							</optgroup>
+						</select>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<h3>Enter your favorite food</h3>
+				<ul>
+					<li>
+						<label for="myFood">Whats your fav food?</label>
+						<input type="text" name="myFood" id="myFood" list="mySuggestion" />
+						<datalist id="mySuggestion">
+							<option>Salad</option>
+							<option>Curry</option>
+							<option>Pizza</option>
+							<option>Fajitas</option>
+							<option>Crisps</option>
+							<option>Fruit</option>
+						</datalist>
+					</li>
+				</ul>
+			</fieldset>
+		</form>
+	</body>
+</html>
