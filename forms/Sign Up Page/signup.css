@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Caveat:wght@700&family=Poor+Story&family=Satisfy&family=Source+Serif+Pro:ital,wght@1,300&family=Tangerine&display=swap");
+
 body {
+	font-family: "Source Serif Pro", serif;
 	height: 100vh;
 	width: 100%;
 	display: flex;
@@ -21,6 +24,7 @@ body {
 }
 
 .content {
+	border: 2px solid rgb(100, 81, 4);
 	position: absolute;
 	align-self: center;
 	display: grid;
@@ -28,10 +32,8 @@ body {
 	width: 80%;
 	min-height: 70vh;
 	grid-template-columns: 1fr 2fr;
-	grid-template-rows: 30% 40% 30%;
-}
-
-div {
+	grid-template-rows: 40% 40% 20%;
+	box-shadow: 10px 10px 5px rgba(37, 29, 2, 0.733);
 }
 
 .sidebar {
@@ -47,14 +49,9 @@ div {
 	justify-content: center;
 }
 
-.signUp {
-	height: 100%;
-	grid-column-start: 2;
-	grid-column-end: 3;
-}
-
 .welcome {
-	padding: 15px;
+	padding: 10px;
+	padding-bottom: 20px;
 	box-shadow: 0px 10px 2px rgb(177, 171, 0);
 }
 
@@ -93,17 +90,28 @@ input {
 	appearance: none;
 	background-color: rgba(236, 214, 103, 0.8);
 	border: 1px solid rgba(172, 151, 46, 0.8);
+	border-radius: 20px;
+}
+
+input:active:focus {
+	background-color: rgba(172, 151, 46, 0.8);
+}
+
+input:invalid {
+	background-color: rgb(212, 167, 20);
 }
 
 label {
+	font-size: 20px;
 	display: block;
-	padding-bottom: 2px;
 }
 
 button {
+	font-family: "Source Serif Pro", serif;
+	font-size: 24px;
 	position: relative;
-	top: 30px;
-	padding: 10px 20px;
+	top: 10px;
+	padding: 5px 20px;
 	background: radial-gradient(
 		circle,
 		rgba(225, 232, 148, 1) 0%,
@@ -111,13 +119,28 @@ button {
 		rgba(139, 139, 24, 1) 100%
 	);
 
-	border-radius: 8px;
+	border-radius: 20px;
 	border: 2px solid rgb(239, 212, 158);
 	box-shadow: 5px 5px 5px rgba(139, 139, 24, 1);
 }
 
 #logo {
-	font-size: 2rem;
+	font-size: 3rem;
 	font-weight: 900;
-	padding-top: 40px;
+	padding-top: 80px;
+	color: rgb(179, 179, 57);
+}
+
+h2 {
+	padding: 0px;
+	margin: 0px;
+	font-weight: 1000;
+}
+
+p {
+	font-size: 20px;
+}
+
+.logIn {
+	padding-left: 10%;
 }

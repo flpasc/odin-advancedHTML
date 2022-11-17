@@ -29,15 +29,32 @@
 					<ul>
 						<li>
 							<label for="firstName">*First Name:</label>
-							<input type="text" name="first_name" id="firstName" />
+							<input
+								required
+								type="text"
+								name="first_name"
+								id="firstName"
+								pattern="^[a-z0-9]{3,15}$"
+								placeholder="Not a" />
 						</li>
 						<li>
 							<label for="lastName">*Last Name:</label>
-							<input type="text" name="last_name" id="lastName" />
+							<input
+								required
+								type="text"
+								name="last_name"
+								id="lastName"
+								pattern="^[a-z0-9]{3,15}$"
+								placeholder="scam" />
 						</li>
 						<li>
 							<label for="email">*Email:</label>
-							<input type="email" name="email" id="email" />
+							<input
+								required
+								type="email"
+								name="email"
+								id="email"
+								placeholder="..@fakepartner.scam" />
 						</li>
 
 						<li>
@@ -46,12 +63,19 @@
 						</li>
 						<li>
 							<label for="pwd">*Password</label>
-							<input type="password" name="user_pwd" id="pwd" />
+							<input
+								required
+								type="password"
+								name="user_pwd"
+								id="pwd"
+								placeholder="123456789"
+								pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,25}$" />
 						</li>
 
 						<li>
 							<label for="rptpwd">*Confirm Password</label>
-							<input type="password" name="user_rptpwd" id="rptpwd" />
+							<input required type="password" name="user_rptpwd" id="rptpwd" minlength="8"
+							maxlength="16"
 						</li>
 						<li>
 							<button type="submit">Submit</button>
@@ -59,7 +83,9 @@
 					</ul>
 				</form>
 			</div>
-			<div class="footer"></div>
+			<div class="footer">
+				<p class="logIn">Already have a account? <a href="">Log In </a></p>
+			</div>
 		</div>
 	</body>
 </html>
