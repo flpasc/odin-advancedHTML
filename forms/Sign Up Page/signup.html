@@ -68,23 +68,37 @@
 								name="user_pwd"
 								id="pwd"
 								placeholder="123456789"
-								pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,25}$" />
+								pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,25}$"
+								onkeyup="checkpwd()" />
+							<span id="tooltip"
+								><p>at least 8 long</p>
+								<p>one capital letter</p></span
+							>
 						</li>
 
 						<li>
 							<label for="rptpwd">*Confirm Password</label>
-							<input required type="password" name="user_rptpwd" id="rptpwd" minlength="8"
-							maxlength="16"
+							<input
+								required
+								type="password"
+								name="user_rptpwd"
+								id="rptpwd"
+								minlength="8"
+								maxlength="16"
+								onkeyup="checkpwd()" />
+
+							<span id="checkmark"></span>
 						</li>
 						<li>
-							<button type="submit">Submit</button>
+							<button type="submit">Create Account</button>
 						</li>
 					</ul>
 				</form>
 			</div>
 			<div class="footer">
-				<p class="logIn">Already have a account? <a href="">Scam In </a></p>
+				<p class="logIn">Already have an account? <a href="">Scam In </a></p>
 			</div>
 		</div>
+		<script src="./signup.js"></script>
 	</body>
 </html>

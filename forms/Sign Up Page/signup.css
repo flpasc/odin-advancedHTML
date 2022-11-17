@@ -91,6 +91,7 @@ input {
 	background-color: rgba(236, 214, 103, 0.8);
 	border: 1px solid rgba(172, 151, 46, 0.8);
 	border-radius: 20px;
+	font-family: "Source Serif Pro", serif;
 }
 
 input:active:focus {
@@ -99,6 +100,7 @@ input:active:focus {
 
 input:invalid {
 	background-color: rgb(212, 167, 20);
+	border-color: red;
 }
 
 label {
@@ -110,7 +112,7 @@ button {
 	font-family: "Source Serif Pro", serif;
 	font-size: 24px;
 	position: relative;
-	top: 10px;
+	top: 25px;
 	padding: 5px 20px;
 	background: radial-gradient(
 		circle,
@@ -139,8 +141,34 @@ h2 {
 
 p {
 	font-size: 20px;
+	padding: 0px;
+	margin: 0px;
 }
 
 .logIn {
 	padding-left: 10%;
+	padding-top: 3%;
+}
+
+span {
+	margin: 0px;
+	padding-left: 23%;
+	position: absolute;
+	top: 110%;
+	display: none;
+}
+
+span > p {
+	font-size: 12px;
+}
+
+#checkmark {
+	width: 20px;
+	position: absolute;
+	top: 120%;
+	right: 18%;
+}
+
+input[type="password"]:invalid + span {
+	display: block;
 }
