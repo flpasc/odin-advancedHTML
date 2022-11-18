@@ -62,7 +62,6 @@ body {
 	display: flex;
 	height: 100%;
 	width: 100%;
-	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	background-color: rgba(255, 255, 205, 0.9);
@@ -78,6 +77,7 @@ form {
 }
 
 ul {
+	display: flex;
 	position: relative;
 	top: -40px;
 	margin-top: 0px;
@@ -98,7 +98,7 @@ input {
 	font-family: "Source Serif Pro", serif;
 }
 
-input:active:focus {
+input:active {
 	background-color: rgba(172, 151, 46, 0.8);
 }
 
@@ -183,9 +183,12 @@ input[type="password"]:valid + #tooltip {
 }
 
 #checkmark {
-	display: block;
-	position: absolute;
-	right: 110px;
-	top: 130px;
+	display: flex;
 	padding: 0px;
+	margin-left: 160px;
+	margin-top: 13px;
+}
+
+input[type="password"]:valid + #tooltip {
+	display: none;
 }

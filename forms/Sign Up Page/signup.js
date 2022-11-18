@@ -3,7 +3,7 @@ var checkpwd = function () {
 	const rptpwd = document.getElementById("rptpwd").value;
 	const checkmark = document.getElementById("checkmark");
 
-	if (pwd === rptpwd) {
+	if (pwd === rptpwd && pwd.length >= 8) {
 		checkmark.innerHTML = "√";
 		checkmark.style.color = "green";
 		console.log("pwd = rptpwd");
