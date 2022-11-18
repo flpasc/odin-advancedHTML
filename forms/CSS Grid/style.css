@@ -1,0 +1,33 @@
+.floorplan {
+	display: inline-grid;
+	grid-template: 80px 80px 80px 80px 80px/ 80px 80px 80px 80px 80px;
+	background-color: orange;
+}
+.floorplan > div {
+	border: 1px solid black;
+}
+
+.living-room {
+	grid-column: 1/6;
+	grid-row: 1/3;
+}
+
+.bathroom {
+	grid-column: 1/2;
+	grid-row: 3/6;
+}
+
+.bedroom {
+	grid-column: 2/4;
+	grid-row: 3/5;
+}
+
+.closet {
+	grid-column: 2/4;
+	grid-row: 5/6;
+}
+
+.kitchen {
+	grid-column: 4/6;
+	grid-row: 3/6;
+}
